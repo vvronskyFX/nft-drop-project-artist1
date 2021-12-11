@@ -1,0 +1,19 @@
+{
+  "name": "Space Vibin'",
+  "symbol": "ASTRO",
+  "image": "1.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "1.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "C1D9UCf92kfd339i7o9pJgQ7g5cWts6K3jF1w6SS9qWY",
+        "share": 100
+      }
+    ]
+  }
+}
