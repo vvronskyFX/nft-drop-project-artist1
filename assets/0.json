@@ -1,6 +1,8 @@
 {
   "name": "Space Ballin'",
-  "symbol": "ASTRO",
+  "symbol": "YUCE",
+  "description": "Collection of YUCE's orginal tracks. This is the number 1/3.",
+  "seller_fee_basis_points": 500,
   "image": "0.png",
   "properties": {
     "files": [
@@ -14,6 +16,7 @@
         "address": "C1D9UCf92kfd339i7o9pJgQ7g5cWts6K3jF1w6SS9qWY",
         "share": 100
       }
-    ]
+    ],
+    "collection": {"name": "YUCE Album", "family": "Music"}
   }
 }

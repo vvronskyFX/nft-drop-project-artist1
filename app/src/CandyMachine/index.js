@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Connection, PublicKey } from '@solana/web3.js';
 import { Program, Provider, web3 } from '@project-serum/anchor';
 import { MintLayout, TOKEN_PROGRAM_ID, Token } from '@solana/spl-token';
+import { sendTransactions } from './connection';
 import { programs } from '@metaplex/js';
 import './CandyMachine.css';
 import CountdownTimer from '../CountdownTimer';
@@ -64,6 +65,11 @@ const CandyMachine = ({ walletAddress }) => {
     const itemsRedeemed = candyMachine.itemsRedeemed.toNumber();
     const itemsRemaining = itemsAvailable - itemsRedeemed;
     const goLiveData = candyMachine.data.goLiveDate.toNumber();
+    const presale =
+    candyMachine.data.whitelistMintSettings &&
+    candyMachine.data.whitelistMintSettings.presale &&
+    (!candyMachine.data.goLiveDate ||
+      candyMachine.data.goLiveDate.toNumber() > new Date().getTime() / 1000);
 
     const goLiveDateTimeString = `${new Date(
         goLiveData * 1000
